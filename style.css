@@ -21,31 +21,52 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 #logo {
+    max-width: 100%;
+    height: auto;
     background-color: black;
     opacity: 50%;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    position: relative;
+    bottom: 230px;
 
 }
 
 #logo img {
-    display: inline;
     width: 100px;
     height: auto;
 }
 
 #logo p {
+    position: relative;
+    top: 10px;
     font-family: norse;
+    color: white;
+    font-size: 100px;
+    margin: 0;
 
+    display: inline;
 }
 
 
 #photocreds{
     color: white;
     position: relative;
-    top: 850px;
+    top: 380px;
+    font-size: 10px;
 }
 
 
@@ -56,6 +77,8 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #f7f7f7;
+
+    font-family: "Noto Sans";
 }
 
 #signup > :not(form) {
@@ -70,11 +93,30 @@ form {
     gap: 20px;
 
     justify-content: space-between;
-    padding-right: 70%;
+    padding-right: 60%;
     padding-left: 20px;
     box-shadow:
         0px 5px 4px -4px gray
     ;
+}
+
+form label {
+    text-transform: uppercase;
+    font-size: small;
+    color: rgb(93, 92, 92);
+    font-family: "Nunito";
+}
+
+form input {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px;
+    width: 200px;
+}
+
+form input:invalid {
+    
 }
 
 label {
@@ -83,11 +125,21 @@ label {
 
 button {
     width: 200px;
-    
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+    background-color: #596D48;
+
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: medium;
+    color: white;
 }
 
 #login-button {
-    color: gold;
+    color: #596D48;
+    font-weight: bold;
     text-decoration: none;
 }
 
