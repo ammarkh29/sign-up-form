@@ -110,12 +110,16 @@ form label {
 form input {
     border-radius: 5px;
     border-width: 1px;
-    border-color: black;
+    border-color: #E5E7EB;
     padding: 5px;
     width: 200px;
 }
 
 form input:invalid {
+    border-color: red;
+}
+
+form input:focus {
     
 }
 
